@@ -130,7 +130,83 @@
 
     function refreshVoice() {
       let voice = document.getElementsByName('voiceName')[0];
-      let new_voices = [{'Name': 'Microsoft Server Speech Text to Speech Voice (zh-CN, HuihuiRUS)', 'ShortName': 'zh-CN-HuihuiRUS', 'Gender': 'Female', 'Locale': 'zh-CN', 'SuggestedCodec': 'audio-24khz-48kbitrate-mono-mp3', 'FriendlyName': 'Chinese:慧慧', 'Status': 'GA'}, {'Name': 'Microsoft Server Speech Text to Speech Voice (zh-CN, Yaoyao)', 'ShortName': 'zh-CN-Yaoyao', 'Gender': 'Female', 'Locale': 'zh-CN', 'SuggestedCodec': 'audio-24khz-48kbitrate-mono-mp3', 'FriendlyName': 'Chinese:瑶瑶', 'Status': 'GA'}, {'Name': 'Microsoft Server Speech Text to Speech Voice (zh-CN, XiaoxuanNeural)', 'ShortName': 'zh-CN-XiaoxuanNeural', 'Gender': 'Female', 'Locale': 'zh-CN', 'SuggestedCodec': 'audio-24khz-48kbitrate-mono-mp3', 'FriendlyName': 'Chinese:晓萱', 'Status': 'GA'}, {'Name': 'Microsoft Server Speech Text to Speech Voice (zh-CN, XiaoxiaoNeural)', 'ShortName': 'zh-CN-XiaoxiaoNeural', 'Gender': 'Female', 'Locale': 'zh-CN', 'SuggestedCodec': 'audio-24khz-48kbitrate-mono-mp3', 'FriendlyName': 'Chinese:晓晓', 'Status': 'GA'}, {'Name': 'Microsoft Server Speech Text to Speech Voice (zh-CN, XiaohanNeural)', 'ShortName': 'zh-CN-XiaohanNeural', 'Gender': 'Female', 'Locale': 'zh-CN', 'SuggestedCodec': 'audio-24khz-48kbitrate-mono-mp3', 'FriendlyName': 'Chinese:晓涵', 'Status': 'GA'}, {'Name': 'Microsoft Server Speech Text to Speech Voice (zh-CN, Kangkang)', 'ShortName': 'zh-CN-Kangkang', 'Gender': 'Male', 'Locale': 'zh-CN', 'SuggestedCodec': 'audio-24khz-48kbitrate-mono-mp3', 'FriendlyName': 'Chinese:康康', 'Status': 'GA'}, {'Name': 'Microsoft Server Speech Text to Speech Voice (zh-CN, XiaoyanNeural)', 'ShortName': 'zh-CN-XiaoyanNeural', 'Gender': 'Female', 'Locale': 'zh-CN', 'SuggestedCodec': 'audio-24khz-48kbitrate-mono-mp3', 'FriendlyName': 'Chinese:晓颜', 'Status': 'GA'}, {'Name': 'Microsoft Server Speech Text to Speech Voice (zh-CN, XiaoshuangNeural)', 'ShortName': 'zh-CN-XiaoshuangNeural', 'Gender': 'Female', 'Locale': 'zh-CN', 'SuggestedCodec': 'audio-24khz-48kbitrate-mono-mp3', 'FriendlyName': 'Chinese:晓双', 'Status': 'GA'}, {'Name': 'Microsoft Server Speech Text to Speech Voice (zh-CN, XiaoqiuNeural)', 'ShortName': 'zh-CN-XiaoqiuNeural', 'Gender': 'Female', 'Locale': 'zh-CN', 'SuggestedCodec': 'audio-24khz-48kbitrate-mono-mp3', 'FriendlyName': 'Chinese:晓秋', 'Status': 'GA'}, {'Name': 'Microsoft Server Speech Text to Speech Voice (zh-CN, YunyeNeural)', 'ShortName': 'zh-CN-YunyeNeural', 'Gender': 'Male', 'Locale': 'zh-CN', 'SuggestedCodec': 'audio-24khz-48kbitrate-mono-mp3', 'FriendlyName': 'Chinese:云野', 'Status': 'GA'}, {'Name': 'Microsoft Server Speech Text to Speech Voice (zh-CN, XiaoruiNeural)', 'ShortName': 'zh-CN-XiaoruiNeural', 'Gender': 'Female', 'Locale': 'zh-CN', 'SuggestedCodec': 'audio-24khz-48kbitrate-mono-mp3', 'FriendlyName': 'Chinese:晓睿', 'Status': 'GA'}, {'Name': 'Microsoft Server Speech Text to Speech Voice (zh-CN, YunxiNeural)', 'ShortName': 'zh-CN-YunxiNeural', 'Gender': 'Male', 'Locale': 'zh-CN', 'SuggestedCodec': 'audio-24khz-48kbitrate-mono-mp3', 'FriendlyName': 'Chinese:云希', 'Status': 'GA'}, {'Name': 'Microsoft Server Speech Text to Speech Voice (zh-CN, XiaoyouNeural)', 'ShortName': 'zh-CN-XiaoyouNeural', 'Gender': 'Female', 'Locale': 'zh-CN', 'SuggestedCodec': 'audio-24khz-48kbitrate-mono-mp3', 'FriendlyName': 'Chinese:晓悠', 'Status': 'GA'}, {'Name': 'Microsoft Server Speech Text to Speech Voice (zh-CN, YunyangNeural)', 'ShortName': 'zh-CN-YunyangNeural', 'Gender': 'Male', 'Locale': 'zh-CN', 'SuggestedCodec': 'audio-24khz-48kbitrate-mono-mp3', 'FriendlyName': 'Chinese:云扬', 'Status': 'GA'}, {'Name': 'Microsoft Server Speech Text to Speech Voice (zh-CN, XiaomoNeural)', 'ShortName': 'zh-CN-XiaomoNeural', 'Gender': 'Female', 'Locale': 'zh-CN', 'SuggestedCodec': 'audio-24khz-48kbitrate-mono-mp3', 'FriendlyName': 'Chinese:晓墨', 'Status': 'GA'}]
+      let new_voices = [{'Name': 'Microsoft Server Speech Text to Speech Voice (zh-CN, HuihuiRUS)', 'ShortName': 'zh-CN-HuihuiRUS', 'Gender': 'Female', 'Locale': 'zh-CN', 'SuggestedCodec': 'audio-24khz-48kbitrate-mono-mp3', 'FriendlyName': 'Chinese:慧慧', 'Status': 'GA'}, {'Name': 'Microsoft Server Speech Text to Speech Voice (zh-CN, Yaoyao)', 'ShortName': 'zh-CN-Yaoyao', 'Gender': 'Female', 'Locale': 'zh-CN', 'SuggestedCodec': 'audio-24khz-48kbitrate-mono-mp3', 'FriendlyName': 'Chinese:瑶瑶', 'Status': 'GA'}, {'Name': 'Microsoft Server Speech Text to Speech Voice (zh-CN, XiaoxuanNeural)', 'ShortName': 'zh-CN-XiaoxuanNeural', 'Gender': 'Female', 'Locale': 'zh-CN', 'SuggestedCodec': 'audio-24khz-48kbitrate-mono-mp3', 'FriendlyName': 'Chinese:晓萱', 'Status': 'GA'}, {'Name': 'Microsoft Server Speech Text to Speech Voice (zh-CN, XiaoxiaoNeural)', 'ShortName': 'zh-CN-XiaoxiaoNeural', 'Gender': 'Female', 'Locale': 'zh-CN', 'SuggestedCodec': 'audio-24khz-48kbitrate-mono-mp3', 'FriendlyName': 'Chinese:晓晓', 'Status': 'GA'}, {'Name': 'Microsoft Server Speech Text to Speech Voice (zh-CN, XiaohanNeural)', 'ShortName': 'zh-CN-XiaohanNeural', 'Gender': 'Female', 'Locale': 'zh-CN', 'SuggestedCodec': 'audio-24khz-48kbitrate-mono-mp3', 'FriendlyName': 'Chinese:晓涵', 'Status': 'GA'}, {'Name': 'Microsoft Server Speech Text to Speech Voice (zh-CN, Kangkang)', 'ShortName': 'zh-CN-Kangkang', 'Gender': 'Male', 'Locale': 'zh-CN', 'SuggestedCodec': 'audio-24khz-48kbitrate-mono-mp3', 'FriendlyName': 'Chinese:康康', 'Status': 'GA'}, {'Name': 'Microsoft Server Speech Text to Speech Voice (zh-CN, XiaoyanNeural)', 'ShortName': 'zh-CN-XiaoyanNeural', 'Gender': 'Female', 'Locale': 'zh-CN', 'SuggestedCodec': 'audio-24khz-48kbitrate-mono-mp3', 'FriendlyName': 'Chinese:晓颜', 'Status': 'GA'}, {'Name': 'Microsoft Server Speech Text to Speech Voice (zh-CN, XiaoshuangNeural)', 'ShortName': 'zh-CN-XiaoshuangNeural', 'Gender': 'Female', 'Locale': 'zh-CN', 'SuggestedCodec': 'audio-24khz-48kbitrate-mono-mp3', 'FriendlyName': 'Chinese:晓双', 'Status': 'GA'}, {'Name': 'Microsoft Server Speech Text to Speech Voice (zh-CN, XiaoqiuNeural)', 'ShortName': 'zh-CN-XiaoqiuNeural', 'Gender': 'Female', 'Locale': 'zh-CN', 'SuggestedCodec': 'audio-24khz-48kbitrate-mono-mp3', 'FriendlyName': 'Chinese:晓秋', 'Status': 'GA'}, {'Name': 'Microsoft Server Speech Text to Speech Voice (zh-CN, YunyeNeural)', 'ShortName': 'zh-CN-YunyeNeural', 'Gender': 'Male', 'Locale': 'zh-CN', 'SuggestedCodec': 'audio-24khz-48kbitrate-mono-mp3', 'FriendlyName': 'Chinese:云野', 'Status': 'GA'}, {'Name': 'Microsoft Server Speech Text to Speech Voice (zh-CN, XiaoruiNeural)', 'ShortName': 'zh-CN-XiaoruiNeural', 'Gender': 'Female', 'Locale': 'zh-CN', 'SuggestedCodec': 'audio-24khz-48kbitrate-mono-mp3', 'FriendlyName': 'Chinese:晓睿', 'Status': 'GA'}, {'Name': 'Microsoft Server Speech Text to Speech Voice (zh-CN, YunxiNeural)', 'ShortName': 'zh-CN-YunxiNeural', 'Gender': 'Male', 'Locale': 'zh-CN', 'SuggestedCodec': 'audio-24khz-48kbitrate-mono-mp3', 'FriendlyName': 'Chinese:云希', 'Status': 'GA'}, {'Name': 'Microsoft Server Speech Text to Speech Voice (zh-CN, XiaoyouNeural)', 'ShortName': 'zh-CN-XiaoyouNeural', 'Gender': 'Female', 'Locale': 'zh-CN', 'SuggestedCodec': 'audio-24khz-48kbitrate-mono-mp3', 'FriendlyName': 'Chinese:晓悠', 'Status': 'GA'}, {'Name': 'Microsoft Server Speech Text to Speech Voice (zh-CN, YunyangNeural)', 'ShortName': 'zh-CN-YunyangNeural', 'Gender': 'Male', 'Locale': 'zh-CN', 'SuggestedCodec': 'audio-24khz-48kbitrate-mono-mp3', 'FriendlyName': 'Chinese:云扬', 'Status': 'GA'}, {'Name': 'Microsoft Server Speech Text to Speech Voice (zh-CN, XiaomoNeural)', 'ShortName': 'zh-CN-XiaomoNeural', 'Gender': 'Female', 'Locale': 'zh-CN', 'SuggestedCodec': 'audio-24khz-48kbitrate-mono-mp3', 'FriendlyName': 'Chinese:晓墨', 'Status': 'GA'}, {
+        "Name": "Microsoft Server Speech Text to Speech Voice (zh-CN-LN, XiaobeiNeural)",
+        "DisplayName": "Xiaobei",
+        "LocalName": "晓北辽宁",
+        "ShortName": "zh-CN-LN-XiaobeiNeural",
+        "Gender": "Female",
+        "Locale": "zh-CN",
+        "LocaleName": "Chinese (Mandarin, Simplified)",
+        "SampleRateHertz": "24000",
+        "VoiceType": "Neural",
+        "Status": "Preview"
+      },
+        {
+          "Name": "Microsoft Server Speech Text to Speech Voice (zh-CN-SC, YunxiNeural)",
+          "DisplayName": "YunxiSichuan",
+          "LocalName": "云希四川",
+          "ShortName": "zh-CN-SC-YunxiNeural",
+          "Gender": "Male",
+          "Locale": "zh-CN",
+          "LocaleName": "Chinese (Mandarin, Simplified)",
+          "SampleRateHertz": "24000",
+          "VoiceType": "Neural",
+          "Status": "Preview"
+        },
+        {
+          "Name": "Microsoft Server Speech Text to Speech Voice (zh-CN, YunfengNeural)",
+          "DisplayName": "Yunfeng",
+          "LocalName": "云枫",
+          "ShortName": "zh-CN-YunfengNeural",
+          "Gender": "Male",
+          "Locale": "zh-CN",
+          "LocaleName": "Chinese (Mandarin, Simplified)",
+          "StyleList": [
+            "angry",
+            "disgruntled",
+            "cheerful",
+            "fearful",
+            "sad",
+            "serious",
+            "depressed"
+          ],
+          "SampleRateHertz": "24000",
+          "VoiceType": "Neural",
+          "Status": "Preview"
+        },
+        {
+          "Name": "Microsoft Server Speech Text to Speech Voice (zh-CN, YunhaoNeural)",
+          "DisplayName": "Yunhao",
+          "LocalName": "云皓",
+          "ShortName": "zh-CN-YunhaoNeural",
+          "Gender": "Male",
+          "Locale": "zh-CN",
+          "LocaleName": "Chinese (Mandarin, Simplified)",
+          "StyleList": [
+            "Advertisement_upbeat"
+          ],
+          "SampleRateHertz": "24000",
+          "VoiceType": "Neural",
+          "Status": "Preview"
+        },
+        {
+          "Name": "Microsoft Server Speech Text to Speech Voice (zh-CN, YunjianNeural)",
+          "DisplayName": "Yunjian",
+          "LocalName": "云健",
+          "ShortName": "zh-CN-YunjianNeural",
+          "Gender": "Male",
+          "Locale": "zh-CN",
+          "LocaleName": "Chinese (Mandarin, Simplified)",
+          "StyleList": [
+            "Narration-relaxed",
+            "Sports_commentary",
+            "Sports_commentary_excited"
+          ],
+          "SampleRateHertz": "24000",
+          "VoiceType": "Neural",
+          "Status": "Preview"
+        }]
         new_voices.forEach(item => {
         if (item['FriendlyName'].indexOf('Chinese') >= 0) {
           let option = document.createElement('option');
