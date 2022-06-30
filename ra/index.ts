@@ -79,7 +79,7 @@ export function convert(ssml: string, format: string) {
                         "audio": {
                             "metadataoptions": {
                                 "sentenceBoundaryEnabled": "false",
-                                "wordBoundaryEnabled": "true"
+                                "wordBoundaryEnabled": "false"
                             },
                             "outputFormat": "${format}" 
                         }
@@ -111,7 +111,8 @@ export function convert(ssml: string, format: string) {
         });
         let uuid = uuidv4().replace("-", "");
         let url = 'wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&'+ uuid;
-        ws.connect(url);
+        // ws.connect(url);
+        ws.connect('wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4');
     });
 
 }
