@@ -78,7 +78,7 @@ export function convert(ssml: string, format: string) {
                         "audio": {
                             "metadataoptions": {
                                 "sentenceBoundaryEnabled": "false",
-                                "wordBoundaryEnabled": "false"
+                                "wordBoundaryEnabled": "true"
                             },
                             "outputFormat": "${format}" 
                         }
