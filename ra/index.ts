@@ -1,5 +1,6 @@
 import { randomBytes } from "crypto";
 import { client as WebSocketClient } from "websocket";
+import { v4 as uuidv4 } from 'uuid';
 
 
 export const FORMAT_CONTENT_TYPE = new Map([
@@ -108,8 +109,9 @@ export function convert(ssml: string, format: string) {
         ws.on('httpResponse', (response, client) => {
             console.log('ws response status', response.statusCode, response.statusMessage);
         });
-
-        ws.connect('wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4');
+        let uuid = uuidv4().replace("-", "");
+        let url = 'wss://speech.platform.bing.com/consumer/speech/synthesize/readaloud/edge/v1?TrustedClientToken=6A5AA1D4EAFF4E9FB37E23D68491D6F4&'+ uuid;
+        ws.connect(url);
     });
 
 }
