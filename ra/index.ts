@@ -48,7 +48,7 @@ export function convert(ssml: string, format: string) {
                     // console.log('ws disconnected');
                 } else {
                     console.log('ws connection was closed by', code, desc);
-                    reject(`ws connection was closed by: [${code} ${desc}]`);
+                    // reject(`ws connection was closed by: [${code} ${desc}]`);
                 }
             });
 
